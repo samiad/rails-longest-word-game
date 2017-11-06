@@ -1,0 +1,11 @@
+<h1>Des chiffres et des lettres</h1>
+<p>Here is your grid</p>
+<p><%= @random_grid %></p>
+
+<p>What is your longest word ?</p>
+<form action="/score" method="get">
+  <input type="text" id="word" name="word" placeholder="Your word">
+  <input type="submit" value="Valid !">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="hidden" name="random_grid" value="<%= @random_grid %>">
+</form>

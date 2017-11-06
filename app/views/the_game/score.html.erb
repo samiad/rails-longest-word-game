@@ -1,0 +1,8 @@
+<h1>Your Score</h1>
+<br>
+<p>Your word : <%= @word %></p>
+<p>Your score : <%= @result[:score].to_i %></p>
+<p>Time taken to answer : <%= @result[:time].to_i %>s</p>
+<p>Message : <%= @result[:message] %></p>
+
+<%= link_to "Play again", game_path %>
